@@ -22,6 +22,7 @@ Validating the Product: Verifies the product's signature using the public key. Y
 If the signature is tampered with, the output will be: Code certificate invalid: execution denied
 
 •	Simulating an attack: TO simulate a simple attack like the one in the demo put this line of code int line 69: 
+
 with open("product_signature.sig", "wb") as sig_file:
   sig_file.write(b"corruptedsignaturedata")
 
